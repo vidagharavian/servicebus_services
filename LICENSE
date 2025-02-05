@@ -1,0 +1,7 @@
+### Step 6: Install and Test Your Library Locally
+Before distributing your library, you can install it locally for testing purposes.
+
+1. Navigate to your library's root directory (where `setup.py` is located).
+2. Run the following command in the terminal:
+   ```bash
+   pip install .
