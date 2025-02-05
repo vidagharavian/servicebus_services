@@ -10,7 +10,7 @@ setup(
     description='this library is designed to send and receive messages from azure service bus',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/yourusername/my_library',
+    url='https://github.com/vidagharavian/servicebus_services.git',
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
