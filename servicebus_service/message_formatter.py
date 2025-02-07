@@ -16,12 +16,13 @@ class MessageFormatter:
     messageContentType = "application/json"
     messageEncoding = "None"
 
-    def __init__(self, revision, writer, transport, messageId, receivedTs, timestamp=None, isError=False,
+    def __init__(self, revision, writer, transport,receivedTs, messageId=None, timestamp=None, isError=False,
                  isDuplicate=False, messageEncoding="None"):
         self.revision = revision
         self.writer = writer
         self.transport = transport
-        self.messageId = messageId
+        if messageId is not None:
+            self.messageId = messageId
         if timestamp is not None:
             self.timestamp = datetime.datetime.now(timestamp).isoformat()
         self.isError = bool(isError)
